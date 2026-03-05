@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Tienda de Fútbol - Blog</title>
+  <id>http://localhost:5500/</id>
+  <updated>2026-03-04T10:20:00+01:00</updated>
+  <link href="http://localhost:5500/html/blog.html" />
+
+  <entry>
+    <title>Cómo elegir un balón talla 5</title>
+    <id>http://localhost:5500/html/blog.html#post1</id>
+    <updated>2026-03-04T10:00:00+01:00</updated>
+    <link href="http://localhost:5500/html/blog.html#post1" />
+    <summary>Guía rápida para elegir balón de competición.</summary>
+  </entry>
+
+  <entry>
+    <title>Botas FG vs AG: diferencias rápidas</title>
+    <id>http://localhost:5500/html/blog.html#post2</id>
+    <updated>2026-03-04T10:10:00+01:00</updated>
+    <link href="http://localhost:5500/html/blog.html#post2" />
+    <summary>Diferencias clave según el tipo de terreno.</summary>
+  </entry>
+
+  <entry>
+    <title>3 errores comunes al comprar guantes de portero</title>
+    <id>http://localhost:5500/html/blog.html#post3</id>
+    <updated>2026-03-04T10:20:00+01:00</updated>
+    <link href="http://localhost:5500/html/blog.html#post3" />
+    <summary>Errores típicos y cómo evitarlos.</summary>
+  </entry>
+
+</feed>

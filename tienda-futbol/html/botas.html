@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Botas | Tienda de Fútbol</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+</head>
+<body>
+
+<header>
+  <h1>Botas</h1>
+  <p>Catálogo de botas por superficie y por marca</p>
+</header>
+
+<nav>
+  <ul class="container">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="./productos.html">Productos</a></li>
+    <li><a href="./ofertas.html">Ofertas</a></li>
+    <li><a href="./blog.html">Blog</a></li>
+    <li><a href="./newsletter.html">Newsletter</a></li>
+    <li><a href="./contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <section class="card">
+    <h2>Explorar botas</h2>
+    <p class="small">Esta página organiza el catálogo en subniveles para mejorar la navegación (por superficie y por marca).</p>
+    <div class="subnav">
+      <a class="btn" href="#superficie">Ver por superficie</a>
+      <a class="btn btn-ghost" href="#marca">Ver por marca</a>
+    </div>
+  </section>
+
+  <section id="superficie" class="card">
+    <h2>Botas por superficie</h2>
+
+    <div class="grid-2">
+      <article class="card">
+        <h3>FG (Césped natural)</h3>
+        <p>Tacos para campo natural. Buen agarre y estabilidad.</p>
+        <a class="btn" href="#modelo1">Ver ejemplo</a>
+      </article>
+
+      <article class="card">
+        <h3>AG (Césped artificial)</h3>
+        <p>Suela adaptada a artificial para reducir sobrecarga.</p>
+        <a class="btn" href="#modelo2">Ver ejemplo</a>
+      </article>
+
+      <article class="card">
+        <h3>TF (Turf / moqueta)</h3>
+        <p>Multitaco para superficies duras o turf.</p>
+        <a class="btn" href="#modelo3">Ver ejemplo</a>
+      </article>
+
+      <article class="card">
+        <h3>IC (Pista / indoor)</h3>
+        <p>Suela lisa para fútbol sala y pista.</p>
+        <a class="btn" href="#modelo4">Ver ejemplo</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="marca" class="card">
+    <h2>Botas por marca</h2>
+
+    <div class="grid-2">
+      <article class="card" id="modelo1">
+        <h3>Nike</h3>
+        <img class="media" src="../img/botas.jpg" alt="Botas de fútbol" />
+        <p>Modelos ligeros pensados para velocidad.</p>
+        <ul class="small">
+          <li>Superficie: FG</li>
+          <li>Talla ejemplo: 42</li>
+          <li>Precio ejemplo: 79,99 €</li>
+        </ul>
+        <a class="btn" href="./productos.html">Volver a Productos</a>
+      </article>
+
+      <article class="card" id="modelo2">
+        <h3>Adidas</h3>
+        <img class="media" src="../img/botas.jpg" alt="Botas de fútbol" />
+        <p>Control y precisión con ajuste cómodo.</p>
+        <ul class="small">
+          <li>Superficie: AG</li>
+          <li>Talla ejemplo: 41</li>
+          <li>Precio ejemplo: 74,99 €</li>
+        </ul>
+        <a class="btn" href="./productos.html">Volver a Productos</a>
+      </article>
+
+      <article class="card" id="modelo3">
+        <h3>Puma</h3>
+        <img class="media" src="../img/botas.jpg" alt="Botas de fútbol" />
+        <p>Buena relación calidad/precio para entrenar.</p>
+        <ul class="small">
+          <li>Superficie: TF</li>
+          <li>Talla ejemplo: 43</li>
+          <li>Precio ejemplo: 59,99 €</li>
+        </ul>
+        <a class="btn" href="./productos.html">Volver a Productos</a>
+      </article>
+
+      <article class="card" id="modelo4">
+        <h3>Kipsta</h3>
+        <img class="media" src="../img/botas.jpg" alt="Botas de fútbol" />
+        <p>Opción económica para indoor.</p>
+        <ul class="small">
+          <li>Superficie: IC</li>
+          <li>Talla ejemplo: 42</li>
+          <li>Precio ejemplo: 39,99 €</li>
+        </ul>
+        <a class="btn" href="./productos.html">Volver a Productos</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Enlace externo</h2>
+    <p class="small">Ejemplo de enlace a web externa (requisito de enlaces externos).</p>
+    <a class="btn" href="https://www.uefa.com/" target="_blank" rel="noopener">Visitar UEFA.com</a>
+  </section>
+
+</main>
+
+<footer>
+  <div>Proyecto de Lenguajes de Marcas - Tienda de Fútbol</div>
+  <div><a href="../feeds/rss.xml">RSS</a> | <a href="../feeds/atom.xml">Atom</a></div>
+</footer>
+
+</body>
+</html>

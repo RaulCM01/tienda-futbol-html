@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter | Futbol King</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+</head>
+<body>
+
+<header>
+  <h1>Newsletter</h1>
+  <p>Ofertas y novedades por email</p>
+</header>
+
+<nav>
+  <ul class="container">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="./productos.html">Productos</a></li>
+    <li><a href="./ofertas.html">Ofertas</a></li>
+    <li><a href="./blog.html">Blog</a></li>
+    <li><a href="./newsletter.html">Newsletter</a></li>
+    <li><a href="./contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <section class="card">
+    <h2>Suscríbete</h2>
+    <p>Recibe promociones semanales y lanzamientos de material de fútbol.</p>
+
+    <form action="#" method="post">
+      <div class="form-row">
+        <div>
+          <label for="correo_news">Correo</label>
+          <input id="correo_news" name="correo_news" type="email" required placeholder="tucorreo@email.com">
+        </div>
+
+        <div>
+          <label for="frecuencia">Frecuencia</label>
+          <select id="frecuencia" name="frecuencia" required>
+            <option value="semanal">Semanal</option>
+            <option value="quincenal">Quincenal</option>
+            <option value="mensual">Mensual</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Checkbox alineado -->
+      <label class="checkbox">
+        <input type="checkbox" required>
+        Acepto recibir comunicaciones comerciales
+      </label>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Suscribirme</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div>© 2026 Futbol King</div>
+</footer>
+
+</body>
+</html>

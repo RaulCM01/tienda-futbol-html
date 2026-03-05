@@ -1,0 +1,849 @@
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background:#f4f6fb; color:#111; }
+a { color: inherit; text-decoration: none; }
+img, video { max-width: 100%; display: block; }
+
+/* ===== Header ===== */
+header { background:#1f3b5b; color:#fff; padding: 26px 16px; text-align:center; }
+header h1 { margin: 0; font-size: 40px; }
+header p { margin: 10px 0 0; opacity: 0.9; }
+
+.brand { display:flex; align-items:center; justify-content:center; gap:12px; }
+.brand img { width:46px; height:46px; object-fit:contain; }
+
+/* ===== Nav ===== */
+nav { background:#2b517b; }
+nav ul { list-style:none; margin:0; padding:0; display:flex; gap:18px; justify-content:center; flex-wrap:wrap; }
+nav a { display:block; padding:14px 12px; color:#fff; font-weight:700; border-radius:8px; }
+nav a:hover { background:rgba(255,255,255,0.12); }
+
+/* ===== Layout ===== */
+.container { max-width:1100px; margin:18px auto; padding:0 16px; }
+
+.card{
+  background:#fff;
+  border-radius:10px;
+  padding:18px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom:18px;
+}
+
+/* ===== MAIN + ASIDE ===== */
+main.container{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+
+/* contenido principal */
+main.container > section{
+  flex:3;
+}
+
+/* aside lateral */
+main.container > aside{
+  flex:1;
+  min-width:260px;
+}
+
+/* móviles */
+@media (max-width:900px){
+  main.container{
+    flex-direction:column;
+  }
+}
+
+/* ===== GRID PRODUCTOS ===== */
+
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+/* móviles */
+@media (max-width:700px){
+  .grid-2{
+    grid-template-columns:1fr;
+  }
+}
+
+/* imágenes tarjetas */
+.grid-2 img{
+  width:100%;
+  max-height:260px;
+  object-fit:contain;
+  margin:12px auto;
+}
+
+/* ===== Components ===== */
+h2 { margin-top:0; }
+
+.badge{
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:999px;
+  background:#e9f0ff;
+  color:#1f3b5b;
+  font-weight:700;
+  font-size:12px;
+}
+
+/* ===== Buttons ===== */
+.btn{
+  display:inline-block;
+  background:#1f3b5b;
+  color:#fff;
+  padding:10px 14px;
+  border-radius:10px;
+  border:0;
+  cursor:pointer;
+  font-weight:800;
+}
+
+.btn:hover{ opacity:0.92; }
+
+.card .btn{
+  margin-top:10px;
+}
+
+/* ===== Tables ===== */
+table{
+  width:100%;
+  border-collapse:collapse;
+  overflow:hidden;
+  border-radius:10px;
+}
+
+caption{
+  text-align:left;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+th, td{
+  padding:12px;
+  border-bottom:1px solid #e6e6e6;
+  text-align:left;
+}
+
+thead th{ background:#f2f6ff; }
+
+tr:hover td{ background:#fafcff; }
+
+/* ===== Forms ===== */
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+@media (max-width:700px){
+  .form-row{
+    grid-template-columns:1fr;
+  }
+}
+
+label{
+  font-weight:700;
+  display:block;
+  margin-bottom:6px;
+}
+
+input, select, textarea{
+  width:100%;
+  padding:10px;
+  border:1px solid #d0d7e2;
+  border-radius:8px;
+}
+
+textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+fieldset{
+  border:1px solid #d0d7e2;
+  border-radius:10px;
+  padding:12px;
+}
+
+legend{
+  font-weight:800;
+  padding:0 6px;
+}
+
+/* ===== Media ===== */
+video{
+  width:100%;
+  max-width:720px;
+  border-radius:10px;
+}
+
+audio{
+  width:100%;
+  max-width:520px;
+}
+
+/* ===== Footer ===== */
+footer{
+  background:#1f3b5b;
+  color:#fff;
+  text-align:center;
+  padding:18px;
+  margin-top:28px;
+}
+
+footer a{ text-decoration:underline; }
+
+.small{
+  font-size:13px;
+  opacity:0.9;
+}
+
+/* ===== LOGO / HEADER ===== */
+
+header {
+  background:#1f3b5b;
+  color:#fff;
+  padding:30px 16px;
+  text-align:center;
+}
+
+.logo-link{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  text-decoration:none;
+  color:white;
+  transition:transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logo-link:hover{
+  transform:scale(1.04);
+  opacity:0.95;
+}
+
+.logo{
+  width:70px;
+  height:70px;
+  object-fit:cover;
+}
+
+.logo-text h1{
+  margin:0;
+  font-size:38px;
+}
+
+.logo-text p{
+  margin:4px 0 0;
+  font-size:15px;
+  opacity:0.9;
+}
+
+.card{
+background:#fff;
+border-radius:10px;
+padding:18px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+margin-bottom:18px;
+transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 6px 20px rgba(0,0,0,0.12);
+}
+
+.btn{
+display:inline-block;
+background:#1f3b5b;
+color:#fff;
+padding:10px 14px;
+border-radius:10px;
+font-weight:800;
+transition:background 0.2s ease, transform 0.15s ease;
+}
+
+.btn:hover{
+background:#2b517b;
+transform:scale(1.05);
+}
+
+/* ===== Layout main + aside (inicio) ===== */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 330px; /* contenido + aside */
+  gap: 18px;
+  align-items: start;
+}
+
+@media (max-width: 980px) {
+  .layout {
+    grid-template-columns: 1fr; /* aside abajo en móvil */
+  }
+}
+
+/* ===== Aside mejorado ===== */
+.aside {
+  position: sticky;
+  top: 16px;               /* se queda “pegado” al hacer scroll */
+  align-self: start;
+}
+
+.aside .card {
+  border: 1px solid rgba(31,59,91,0.10);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.aside .card h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.aside .card ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.aside .card li {
+  margin: 6px 0;
+}
+
+.aside .card a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  opacity: 0.95;
+}
+
+.aside .card a:hover {
+  opacity: 1;
+}
+
+/* “Chips” para destacar links (opcional, queda muy bien) */
+.aside .chip {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e9f0ff;
+  color: #1f3b5b;
+  font-weight: 800;
+  font-size: 12px;
+  margin: 6px 6px 0 0;
+}
+
+/* ===== Productos: mejoras ===== */
+
+.grid-4{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+@media (max-width: 900px){
+  .grid-4{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px){
+  .grid-4{ grid-template-columns: 1fr; }
+}
+
+.chip-link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px 12px;
+  border-radius: 12px;
+  background:#fff;
+  border:1px solid #e6eaf2;
+  font-weight:800;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.chip-link:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+}
+
+.product-card{
+  background:#fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.product-img{
+  width:100%;
+  height: 220px;
+  object-fit: contain;
+  background:#f7f9ff;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.table-wrap{
+  overflow-x:auto;
+  border-radius: 10px;
+}
+
+tbody tr:nth-child(even) td{
+  background:#fbfcff;
+}
+
+/* Stock badges */
+.stock{
+  display:inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight:800;
+  font-size: 12px;
+}
+.stock.ok{ background:#eaf7ef; color:#166534; }
+.stock.low{ background:#fff7ed; color:#9a3412; }
+
+/* Botón pequeño en tabla */
+.btn-sm{
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight:800;
+}
+
+/* ===== Layout página productos ===== */
+
+.products-layout{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* destacados en 2 columnas */
+.products-layout .grid-2{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+
+@media (max-width:900px){
+.products-layout .grid-2{
+grid-template-columns:1fr;
+}
+}
+
+table{
+font-size:14px;
+}
+
+thead th{
+font-weight:700;
+}
+
+tbody td{
+vertical-align:middle;
+}
+
+/* ===== Página productos centrada ===== */
+
+.products-layout{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:22px;
+}
+
+/* tarjetas centradas */
+.products-layout .card{
+width:100%;
+max-width:800px;
+}
+
+/* tarjeta destacados un poco más pequeña */
+.products-layout .card:first-child{
+max-width:650px;
+}
+
+/* imágenes de productos más proporcionadas */
+.product-img{
+height:200px;
+object-fit:contain;
+}
+
+.product-card{
+text-align:center;
+}
+
+/* ===== Layout página productos ===== */
+
+.products-page{
+display:grid;
+grid-template-columns: 1fr 320px;
+gap:24px;
+align-items:start;
+}
+
+/* catálogo centrado */
+.main-products{
+display:flex;
+justify-content:center;
+}
+
+.main-products .card{
+max-width:750px;
+width:100%;
+}
+
+/* aside */
+.products-aside{
+position:sticky;
+top:20px;
+}
+
+/* productos destacados */
+.product-card{
+margin-bottom:16px;
+text-align:center;
+}
+
+.product-img{
+height:150px;
+object-fit:contain;
+margin:10px 0;
+}
+
+/* GRID para destacados del aside */
+.products-aside .card{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:16px;
+}
+
+/* título ocupando toda la fila */
+.products-aside .card h2{
+grid-column:1 / -1;
+}
+
+/* tarjetas más compactas */
+.product-card{
+text-align:center;
+padding:10px;
+}
+
+.product-img{
+height:110px;
+object-fit:contain;
+}
+
+.product-card:hover{
+transform:translateY(-4px);
+transition:0.2s;
+}
+
+/* Ajuste del aside para que no se salga */
+.products-aside .card{
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+gap:14px;
+width:100%;
+box-sizing:border-box;
+}
+
+/* El título ocupa toda la fila */
+.products-aside .card h2{
+grid-column:1 / -1;
+}
+
+/* Las tarjetas no pueden desbordar */
+.product-card{
+width:100%;
+box-sizing:border-box;
+}
+
+/* Imagen ajustada al ancho */
+.product-img{
+max-width:100%;
+height:100px;
+object-fit:contain;
+}
+
+/* ===== FIX: Destacados (aside) no se sale ===== */
+aside, aside * { box-sizing: border-box; }
+aside .card { overflow: hidden; }              /* corta cualquier desborde */
+
+/* Si dentro del aside tienes un grid 2 columnas, fuerza que encaje */
+aside .grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Mini tarjetas del aside: que nunca puedan estirarse más del contenedor */
+aside .card .card { 
+  min-width: 0;
+}
+
+/* BOTÓN: clave. Que no empuje la tarjeta */
+aside .btn {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  padding: 10px 8px;     /* un poco menos ancho */
+  white-space: normal;   /* permite salto de línea si hace falta */
+  line-height: 1.1;
+}
+
+/* Imagen del destacado: contenida */
+aside img {
+  max-width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* ===== FIX REAL: Destacados (aside) sin cortes y 2x2 bien ===== */
+
+/* 1) NO recortar el contenido del aside */
+aside .card { 
+  overflow: visible;   /* <- esto arregla el “corte” */
+}
+
+/* 2) Grid 2 columnas que encaja siempre */
+aside .grid-2{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* 3) Mini-tarjetas dentro de Destacados */
+aside .card .card{
+  padding: 12px;
+  border-radius: 12px;
+  min-width: 0;
+}
+
+/* 4) Ajuste de textos e imagen para que no “aplasten” */
+aside .card .card p{
+  font-size: 12px;
+  margin: 8px 0 10px;
+}
+
+aside .card .card img{
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* 5) Botón: que quepa siempre dentro */
+aside .card .card .btn{
+  display:block;
+  width: 100%;
+  padding: 9px 8px;
+  font-size: 12px;
+  text-align:center;
+  white-space: normal;   /* permite 2 líneas si hiciera falta */
+  line-height: 1.1;
+}
+
+/* ===== Productos: layout con aside más ancho ===== */
+.page-layout{
+  display:flex;
+  gap: 20px;
+  align-items:flex-start;
+}
+
+.page-layout > section{   /* contenido principal */
+  flex: 1;
+  min-width: 0;
+}
+
+.sidebar{                /* aside */
+  width: 420px;          /* MÁS GRANDE */
+  max-width: 100%;
+  flex: 0 0 420px;
+}
+
+@media (max-width: 1100px){
+  .page-layout{ flex-direction: column; }
+  .sidebar{ width: 100%; flex: 1 1 auto; }
+}
+
+/* ===== Destacados: 2x2 dentro del fondo sin apretarse ===== */
+.sidebar .destacados-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.sidebar .destacados-grid .card{
+  margin: 0;             /* quita márgenes raros */
+  padding: 12px;
+}
+
+.sidebar .destacados-grid img{
+  height: 110px;         /* un pelín más alto */
+  object-fit: contain;
+}
+
+/* ===== Ofertas ===== */
+.ofertas-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 900px){
+  .ofertas-grid{ grid-template-columns: 1fr; }
+}
+
+/* Ajuste para que las mini-ofertas no queden gigantes */
+.oferta-item{
+  padding: 16px;
+}
+
+.oferta-item h3{
+  margin: 10px 0 8px;
+  font-size: 16px;
+}
+
+/* ===== BLOG LAYOUT ===== */
+.blog-layout{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+}
+
+.blog-posts{
+  flex:1;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.blog-aside{
+  width:320px;
+  max-width:100%;
+}
+
+@media (max-width: 900px){
+  .blog-layout{ flex-direction:column; }
+  .blog-aside{ width:100%; }
+}
+
+.checkbox{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:12px 0;
+}
+
+.checkbox input{
+  width:16px;
+  height:16px;
+}
+
+/* ===== Newsletter: checkbox + acciones ===== */
+.checkbox{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:14px;
+  font-weight:700;
+}
+
+.checkbox input{
+  width:16px;
+  height:16px;
+}
+
+.form-actions{
+  margin-top:14px;
+}
+
+/* ===== Formularios: checkbox/radio alineados ===== */
+.checkline{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:14px;
+  font-weight:700;
+}
+
+.checkline input[type="checkbox"],
+.checkline input[type="radio"]{
+  width:16px;
+  height:16px;
+  margin:0;
+  flex: 0 0 auto;
+}
+
+.radio-group{
+  display:grid;
+  gap:10px;
+  margin-top:8px;
+}
+
+.radio-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+}
+
+.form-top{
+margin-top:14px;
+}
+
+.radio-group{
+display:flex;
+flex-direction:column;
+gap:8px;
+padding:10px 12px;
+border:1px solid #d7dbe0;
+border-radius:10px;
+}
+
+.radio-item{
+display:flex;
+align-items:center;
+gap:8px;
+font-weight:600;
+}
+
+.checkline{
+display:flex;
+align-items:center;
+gap:10px;
+margin-top:14px;
+font-weight:600;
+}
+
+.form-actions{
+margin-top:14px;
+display:flex;
+gap:10px;
+}
+
+.btn-secondary{
+background:#2b517b;
+}
+
+.radio-group{
+  border:1px solid #d7dbe0;
+  border-radius:10px;
+  padding:12px 14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.radio-option{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+}
+
+.radio-option input{
+  width:16px;
+  height:16px;
+  margin:0;
+}
